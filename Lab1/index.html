@@ -52,6 +52,9 @@
 							<a class="nav-link" href="#errors">Errores</a>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link" href="#databases">Ciclo</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" href="#sources">Bibliografía</a>
 						</li>
 						<li class="nav-item">
@@ -157,31 +160,59 @@
 					<div class="card">
 						<div class="card-body">
 							<h5 class="card-title">¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</h5>
-							<p class="card-text">Cuando una etiqueta de HTML es reemplazada en una nueva versión por etiquetas más funcionales o flexibles el <strong>W3C</strong> declara esa etiqueta como depreciada/desaprobada. Esto significa que a medida que se actualicen o se hagan nuevas páginas deberán implementar las nuevas etiquetas. Las etiquetas desaprobadas eventualmente dejarán de ser compatibles con los nuevos navegadores. Entre estas etiquetas encontramos: <i>&lt;acronym&gt; &lt;applet&gt; &lt;big&gt; &lt;basefont&gt; &lt;dir&gt; &lt;font&gt; &lt;frame&gt;</i></p>
+							<p class="card-text">Cuando una etiqueta de HTML es reemplazada en una nueva versión por etiquetas más funcionales o flexibles el <strong>W3C</strong> declara esa etiqueta como depreciada/desaprobada. Esto significa que a medida que se actualicen o se hagan nuevas páginas deberán implementar las nuevas etiquetas. Las etiquetas desaprobadas eventualmente dejarán de ser compatibles con los nuevos navegadores. Entre estas etiquetas encontramos: <i><code>&lt;acronym&gt;</code> <code>&lt;applet&gt;</code> <code>&lt;big&gt;</code> <code>&lt;basefont&gt;</code> <code>&lt;dir&gt;</code> <code>&lt;font&gt;</code> <code>&lt;frame&gt;</code></i></p>
 						</div>
 					</div>
 					<div class="card">
 						<div class="card-body">
 							<h5 class="card-title">¿Cuáles son las diferencias principales entre HTML 4 y HTML5?</h5>
-							<p class="card-text">No, porque el error 500 indica que el usuario no tiene los permisos requeridos para acceder al recurso solicitado. Esto va relacionado a la seguridad del sitio y que los usuarios no puedan editar los contenidos de la misma o acceder a recursos sin haberse autenticado.</p>
+							<p class="card-text">HTML5 define una sintaxis que es compatible con HTML4 y XHTML 1.0. Por tanto, un salto de línea se puede escribir como &lt;br&gt; (HTML4) o &lt;br/&gt; (XHTML 1.0).</p>
+							<p class="card-text">Para definir el juego de caracteres se introduce un nuevo atributo para la etiqueta <meta>: &lt;meta charset=”UTF-8″&gt;</p>
+							<p class="card-text">HTML5 permite incluir elementos de SVG y MathML.</p>
+							<p class="card-text">Se introducen nuevos elementos, como: section, article, aside, header, footer, etc.</p>
+							<p class="card-text">Se introducen nuevos atributos, como: media, charset, autofocus, placeholder, etc.</p>
+							<p class="card-text">Algunos elementos cambian, como: a, b, i, menu, etc.</p>
+							<p class="card-text">Algunos atributos cambian, como: type, name, summary, etc.</p>
+							<p class="card-text">Algunos elementos desaparecen, como: basefont, big, center, etc.</p>
+							<p class="card-text">Algunos atributos desaparecen, como: align, background, bgcolor, etc.</p>
 						</div>
 					</div>
 					<div class="card">
 						<div class="card-body">
 							<h5 class="card-title">¿Qué componentes de estructura y estilo tiene una tabla?</h5>
-							<p class="card-text">No, porque el error 500 indica que el usuario no tiene los permisos requeridos para acceder al recurso solicitado. Esto va relacionado a la seguridad del sitio y que los usuarios no puedan editar los contenidos de la misma o acceder a recursos sin haberse autenticado.</p>
+							<p class="card-text">Descripción de componentes</p>
 						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item"><h5><code>&lt;table&gt;</code></h5><p class="card-text">Define la tabla.</p></li>
+							<li class="list-group-item"><h5><code>&lt;tr&gt;</code></h5><p class="card-text">Define la fila.</p></li>
+							<li class="list-group-item"><h5><code>&lt;th&gt;</code></h5><p class="card-text">Define el encabezado.</p></li>
+							<li class="list-group-item"><h5><code>&lt;td&gt;</code></h5><p class="card-text">Define la celda.</p></li>
+							<li class="list-group-item"><h5>Estilo CSS</h5><p class="card-text">Entre los elementos de estilo que se pueden editar en una tabla encontramos: <i>border, border-collapse, padding, text-align, border-spacing, width, height, colspan...</i></p></li>
+						</ul>
 					</div>
 					<div class="card">
 						<div class="card-body">
 							<h5 class="card-title">¿Cuáles son los principales controles de una forma HTML5?</h5>
-							<p class="card-text">No, porque el error 500 indica que el usuario no tiene los permisos requeridos para acceder al recurso solicitado. Esto va relacionado a la seguridad del sitio y que los usuarios no puedan editar los contenidos de la misma o acceder a recursos sin haberse autenticado.</p>
 						</div>
+						<ul class="list-group list-group-flush">
+							<li class="list-group-item"><h5><code>&lt;form&gt;</code></h5><p class="card-text">Define el formulario HTML para que el usuario ingrese datos.</p></li>
+							<li class="list-group-item"><h5><code>&lt;input&gt;</code></h5><p class="card-text">Define una entrada de texto.</p></li>
+							<li class="list-group-item"><h5><code>&lt;textarea&gt;</code></h5><p class="card-text">Define una entrada de texto de varias líneas.</p></li>
+							<li class="list-group-item"><h5><code>&lt;label&gt;</code></h5><p class="card-text">Define la etiqueta para una entrada de texto.</p></li>
+							<li class="list-group-item"><h5><code>&lt;fieldset&gt;</code></h5><p class="card-text">Agrupa elementos relacionados del formulario.</p></li>
+							<li class="list-group-item"><h5><code>&lt;legend&gt;</code></h5><p class="card-text">Etiqueta de texto para un elemento <i>fieldset</i>.</p></li>
+							<li class="list-group-item"><h5><code>&lt;select&gt;</code></h5><p class="card-text">Define lista tipo dropdown.</p></li>
+							<li class="list-group-item"><h5><code>&lt;optgroup&gt;</code></h5><p class="card-text">Define un grupo de opciones relacionadas en una lista tipo dropdown.</p></li>
+							<li class="list-group-item"><h5><code>&lt;option&gt;</code></h5><p class="card-text">Define una opción en la lista tipo dropdown.</p></li>
+							<li class="list-group-item"><h5><code>&lt;button&gt;</code></h5><p class="card-text">Crea un botón presionable.</p></li>
+							<li class="list-group-item"><h5><code>&lt;datalist&gt;</code></h5><p class="card-text">Define una lista de opciones predefinidas para los controles de entrada.</p></li>
+							<li class="list-group-item"><h5><code>&lt;output&gt;</code></h5><p class="card-text">Define el resultado de una operación.</p></li>
+						</ul>
 					</div>
 					<div class="card">
 						<div class="card-body">
-							<h5 class="card-title">¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</h5>
-							<p class="card-text">No, porque el error 500 indica que el usuario no tiene los permisos requeridos para acceder al recurso solicitado. Esto va relacionado a la seguridad del sitio y que los usuarios no puedan editar los contenidos de la misma o acceder a recursos sin haberse autenticado.</p>
+							<h5 class="card-title">¿Qué tanto soporte HTML5 tiene el navegador que utilizas?</h5>
+							<p class="card-text">Mi navegador por default, Safari 11.0.2 (en macOS High Sierra 10.13), tiene una calificacion de 452/555.</p>
 						</div>
 					</div>
 				</div>
@@ -320,11 +351,70 @@
 				
 			</article>
 			
+			<article id="databases" class="py-4">
+				<header>
+					<h2>Ciclo de desarrollo/vida de los sistemas de información</h2>
+					<h5>Etapas del desarrollo de software <small><sub>[1][2]</sub></small></h5>
+				</header>
+				
+				
+				<p>El ciclo de vida de un sistema de informacioón se refiere a todas las fases por las que pasa el sistema en cuestión desde su desarrollo, hasta que entre en uso por el cliente. El modelo tradicional del ciclo de vida es secuencial y presenta algunos problemas<small><sub>[2]</sub></small>. Entre estos destacan la dificultad para el cliente de definir todos los requisitos funcionales, y que la versión operativa del software no se verá hasta culminar el proyecto.</p>
+				<div class="card-group py-4">
+					<div class="card">
+						<div class="card-body">
+							<h4 class="card-title">1. Planificación</h4>
+							<p class="card-text">Se realiza la determinación del ámbito, estudios de viabilidad, análisis de riesgos, estimación de costos y planificación temporal.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<h4 class="card-title">2. Análisis</h4>
+							<p class="card-text">Se estudian las necesidades que se deben cubrir en el proyecto, para definir aquello que es absolutamente necesario para su éxito.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<h4 class="card-title">3. Diseño</h4>
+							<p class="card-text">Se realiza de manera modular para definir las características que el sistema debe tener para cubrir las necesidades del usuario analizadas en el punto anterior. Al ser modular se facilita hacer cambios.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<h4 class="card-title">4. Implementación</h4>
+							<p class="card-text">Habiendo definido las necesidades de los usuarios y las características, se empieza con el proceso de codificación siguiendo los lineamientos definidos en el diseño del proyecto. Para esto se deben seleccionar los lenguajes, frameworks y demás herramientas que se utilizarán que permitan realizar el trabajo de manera efectiva.</p>
+						</div>
+					</div>
+				</div>
+				<div class="card-group">
+					<div class="card">
+						<div class="card-body">
+							<h4 class="card-title">5. Pruebas</h4>
+							<p class="card-text">Aunque se puede realizar de muchas formas este paso, básicamente consiste en buscar errores en el código y corregirlos.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<h4 class="card-title">6. Instalación y Despliegue</h4>
+							<p class="card-text">Para la instalación se tiene que tomar en cuenta una planeación del hardware requerido por el sistema, como redes, sistemas operativos, etc. Una vez instalado apropiadamente tanto el hardware como el software, se despliega el sistema para su uso.</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<h4 class="card-title">7. Uso y Mantenimiento</h4>
+							<p class="card-text">En esta etapa se corrigen errores "sobre la marcha". Cuando los usuarios identifican algún problema, se debe corregir y tratar de eliminar todos los defectos. En algunos casos el cliente puede solicitar agregar cierta funcionalidad al sistema. O tal vez se deba actualizar el programa para que siga siendo compatible con los sistemas operativos.</p>
+						</div>
+					</div>
+				</div>
+					
+			</article>
+			
 			<article id="sources" class="py-4">
 				<header>
 					<h2>Bibliografía</h2>
 				</header>
 				<ul>
+					<li>[1] http://flanagan.ugr.es/docencia/2005-2006/2/apuntes/ciclovida.pdf</li>
+					<li>[2] https://www.gestiopolis.com/ciclo-de-vida-de-un-sistema-de-informacion/</li>
 					<li>https://developer.mozilla.org/es/docs/Web/HTTP/Status/200</li>
 					<li>https://www.w3schools.com/w3css/w3css_containers.asp</li>
 					<li>https://www.tutorialspoint.com/html5/html5_deprecated_tags.htm</li>
@@ -334,6 +424,17 @@
 					<li>https://www.w3schools.com/tags/ref_httpmethods.asp</li>
 					<li>https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE</li>
 					<li>https://css-tricks.com/snippets/html/html5-page-structure/</li>
+					<li>http://www.worldpay.com/global/support/support-articles/what-do-your-xml-error-codes-mean</li>
+					<li>https://www.w3schools.com/html/html_xhtml.asp</li>
+					<li>http://php.net/manual/en/features.file-upload.errors.php</li>
+					<li>https://www.tutorialspoint.com/jsp/jsp_http_status_codes.htm</li>
+					<li>https://msdn.microsoft.com/en-us/library/ms757828(v=vs.85).aspx</li>
+					<li>https://www.w3.org/2003/02/06-dom-support.xhtml</li>
+					<li>https://msdn.microsoft.com/es-es/library/c6hac83s(v=vs.94).aspx</li>
+					<li>http://php.net/manual/es/indexes.functions.php</li>
+					<li>https://www.w3schools.com/jquery/jquery_ref_ajax.asp</li>
+					<li>https://css-tricks.com/snippets/jquery/smooth-scrolling/</li>
+					<li>https://www.w3schools.com/html/html_form_elements.asp</li>
 				</ul>
 			</article>
 			
