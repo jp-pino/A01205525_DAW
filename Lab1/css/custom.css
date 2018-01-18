@@ -1,0 +1,23 @@
+body {
+	padding-top: 20px;
+}
+
+.navbar {
+	margin-bottom: 20px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30px;
+}
+
+.sticky:before,
+.sticky:after {
+    content: '';
+    display: table;
+}
+
+h1 {
+	font-family: 'Fjalla One', sans-serif;
+}
