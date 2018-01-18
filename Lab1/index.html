@@ -483,13 +483,25 @@
 										<div class="form-group">
 											<label class="col control-label" for="email">E-mail</label>
 											<div class="col">
-												<input id="email" name="email" type="text" placeholder="E-mail" class="form-control">
+												<input id="email" name="email" type="email" placeholder="E-mail" class="form-control">
+											</div>
+										</div>
+										
+										<!-- Select input-->
+										<div class="form-group">
+											<label class="col control-label" for="options">¿Por qué te contactas?</label>
+											<div class="col">
+												<select class="form-control" id="options">
+													<option>Me gusta mucho el sitio!</option>
+													<option>Encontré una falla</option>
+													<option>Oportunidades de negocio</option>
+												</select>
 											</div>
 										</div>
 
 										<!-- Message body -->
 										<div class="form-group">
-											<label class="col control-label" for="message">Mensaje</label>
+											<label class="col control-label" for="message">Comentarios</label>
 											<div class="col">
 												<textarea class="form-control" id="message" name="message" placeholder="Por favor escriba aquí su mensaje..." rows="5"></textarea>
 											</div>
@@ -532,7 +544,6 @@
 		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/smooth-scroll.js"></script>
-		<script src="js/navbar-fixed.js"></script>
 	</body>
 	
 </html>
