@@ -22,13 +22,16 @@ h1 {
 	font-family: 'Fjalla One', sans-serif;
 }
 
-/*
-h2 {
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 
-h4, h5 {
-	font-family: 'Saira Condensed', sans-serif;
+#questions_lab3 {
+	background-color: #767676;
+	border-radius: 7px;
+	color: white;
+	padding-left: 30px;
+	padding-right: 30px;
 }
-*/
-
