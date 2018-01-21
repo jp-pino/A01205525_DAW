@@ -37,17 +37,17 @@
 			</header>
 
 			<!-- Static navbar -->
-			<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light rounded shadow">
 				<a class="navbar-brand" href="#"><img src="images/logo.png" width="30" height="30" class="d-inline-block " alt=""> </a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a class="nav-link" href="index.html">Home</a>
 						</li>
-						<li class="nav-item dropdown">
+						<li class="nav-item dropdown active">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Labs
 							</a>
@@ -55,7 +55,7 @@
 								<a class="dropdown-item" href="lab1.html">Lab 1</a>
 								<a class="dropdown-item" href="#">Lab 2</a>
 								<a class="dropdown-item" href="lab3.html">Lab 3</a>
-								<a class="dropdown-item" href="lab4.html">Lab 4</a>
+								<a class="dropdown-item active" href="lab4.html">Lab 4</a>
 							</div>
 						</li>
 						<li class="nav-item">
@@ -77,17 +77,17 @@
 				<div class="col-lg-9">
 					
 					<!-- Main component for a primary marketing message or call to action -->
-					<article id="intro" class="jumbotron bg-dark text-white">
+					<article id="intro" class="jumbotron bg-dark text-white shadow">
 						<div class="row">
 							<div class="col-lg-9">
 								<header>
-									<h2>Lab 3: CSS</h2>
+									<h2>Lab 4: JS</h2>
 								</header>
-								<p class="py-5">En este lab debemos agregar estilos <strong>CSS</strong> al laboratorio anterior y contestar nuevas preguntas.</p>
+								<p class="py-5">En este lab debemos realizar ejercicios de <strong>JS</strong> y contestar nuevas preguntas.</p>
 							</div>
 							<div class="col-sm">
 								<div class="container-fluid">
-								<img src="images/css-3.svg" class="img-fluid img" alt="Responsive Image of CSS-3"></div>
+								<img src="images/js.png" class="img-fluid img" alt="Responsive Image of JS"></div>
 							</div>
 						</div>
 
@@ -95,7 +95,7 @@
 
 
 
-					<article id="test" class="py-4">
+					<article id="tests" class="py-4">
 						<header>
 							<div class="row">
 								<div class="col-lg-9">
@@ -121,12 +121,62 @@
 							
 						</header>
 						
-						<div id="js_test" class="jumbotron mt-4">
+						<div id="js_test" class="jumbotron mt-4 shadow">
 						</div>
 						
+					</article>
+					
+					<article id="questions" class="py-4">
+						<header>
+							<h2>Preguntas</h2>
+							<h5 class="px-3">...y respuestas</h5>
+						</header>
+						
+						<div class="card mt-4 shadow">
+							<div class="card-body">
+								<h4 class="card-title">¿Qué diferencias y semejanzas hay entre Java y JavaScript?</h4>
+								<p class="card-text">Ambos lenguajes comparten algunas semejanzas: son orientados a objetos, pueden correr en servidores, en navegadores web, y pueden usar frameworks y librerias<sub>[1][2]</sub>. Sin embargo, son más las diferencias que hay entre ellos. Partiendo de que <strong>Java</strong> es un lenguaje de programación orientado a objetos y que <strong>JS</strong> es un lenguaje de scripting orientado a objetos podemos derivar otras diferencias. Mientras que Java se compila y corre dentro de un JVM o navegador, JS es interpretado y solo puede funcionar dentro de un navegador. También cabe destacar que JavaScript está diseñado para dar interactividad a documentos HTML mientras que las aplicaciones Java cubren necesidades mucho mas amplias.</p>
+							</div>
+						</div>
+						<div class="card text-white bg-dark shadow mt-4">
+							<ul class="list-group list-group-flush bg-dark">
+								<li class="list-group-item text-dark"><h4>¿Qué métodos tiene el objeto <code>Date</code>?</h4><p class="card-text">Descripción de métodos de JavaScript para el objeto Date.</p></li>
+								<li class="list-group-item bg-dark"><h5><code>getDate()</code></h5><p class="card-text">Regresa el día del mes (en números).</p></li>
+								<li class="list-group-item bg-dark"><h5><code>getDay()</code></h5><p class="card-text">Regresa el día de la semana (en números).</p></li>
+								<li class="list-group-item bg-dark"><h5><code>getFullYear()</code></h5><p class="card-text">Regresa el año en 4 dígitos.</p></li>
+								<li class="list-group-item bg-dark"><h5><code>getHours()</code></h5><p class="card-text">Regresa la hora (0 - 23).</p></li>
+								<li class="list-group-item bg-dark"><h5><code>getMilliseconds()</code></h5><p class="card-text">Regresa los milisegundos (0 - 999).</p></li>
+							</ul>
+						</div>
+						<div class="card text-white bg-dark shadow mt-4">
+							<ul class="list-group list-group-flush bg-dark">
+								<li class="list-group-item text-dark"><h4>¿Qué métodos tienen los arreglos?</h4><p class="card-text">Descripción de métodos de JavaScript para los arreglos.</p></li>
+								<li class="list-group-item bg-dark"><h5><code>toString()</code></h5><p class="card-text">Regresa el día del mes (en números).</p></li>
+								<li class="list-group-item bg-dark"><h5><code>pop()</code></h5><p class="card-text">Regresa el día de la semana (en números).</p></li>
+								<li class="list-group-item bg-dark"><h5><code>push()</code></h5><p class="card-text">Regresa el año en 4 dígitos.</p></li>
+								<li class="list-group-item bg-dark"><h5><code>shift()</code></h5><p class="card-text">Regresa la hora (0 - 23).</p></li>
+								<li class="list-group-item bg-dark"><h5><code>unshift()</code></h5><p class="card-text">Regresa los milisegundos (0 - 999).</p></li>
+							</ul>
+						</div>
+						<div class="card mt-4 shadow">
+							<div class="card-body">
+								<h4 class="card-title">¿Cómo se declara una variable con alcance local dentro de una función?</h4>
+								<p class="card-text">Además de estar disponibles los métodos definidos por el DOM de HTML y XML, hay métodos de JavaScript con diferentes funciones de edición del texto/formato del documento, funciones matemáticas, de fecha y hora del sistema, ejecutar funciones del usuario, etc.</p>
+							</div>
+						</div>
+						<div class="card mt-4 shadow">
+							<div class="card-body">
+								<h4 class="card-title">¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</h4>
+								<p class="card-text">En PHP hay un gran número de métodos pensados para la creación de sitios dinámicos. Estos incluyen funciones matemáticas, de fecha/hora, de acceso a bases de datos, de manejo de arreglos, de seguridad, de estilo, etc.</p>
+							</div>
+						</div>
+						<div class="card mt-4 shadow">
+							<div class="card-body">
+								<h4 class="card-title">¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?</h4>
+								<p class="card-text">JSP o <strong>J</strong>ava<strong>S</strong>erver <strong>P</strong>ages es una tecnología para desarrollar páginas dinámicas con el lenguaje Java. De esta manera es similar a PHP, pero JSP tiene acceso a los métodos disponibles en Java.</p>
+							</div>
+						</div>
 
-						
-						
 					</article>
 					
 					<article id="sources" class="py-4">
@@ -146,7 +196,8 @@
 						<nav id="data-scrollspy">
 							<div id="list-example" class="list-group d-none d-lg-block">
 								<a class="list-group-item list-group-item-action" href="#intro"><i class="fas fa-angle-right"></i> Introducción</a>
-								<a class="list-group-item list-group-item-action" href="#questions_lab3"><i class="fas fa-angle-right"></i> Preguntas</a>
+								<a class="list-group-item list-group-item-action" href="#tests"><i class="fas fa-angle-right"></i> Pruebas de JS</a>
+								<a class="list-group-item list-group-item-action" href="#questions"><i class="fas fa-angle-right"></i> Preguntas</a>
 								<a class="list-group-item list-group-item-action" href="#sources"><i class="fas fa-angle-right"></i> Bibliografía</a>
 							</div>
 							<div class="wrapper text-center">
