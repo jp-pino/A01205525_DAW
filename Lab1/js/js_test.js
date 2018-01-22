@@ -154,7 +154,7 @@ function test_6_out() {
 	var n = document.getElementById('test_textfield').value;
 	var area = circle_area(n);
 	
-	var str = "<p>El área del círculo (de radio " + n + "cm) es " + area + "cm.</p>";
+	var str = "<p>El área del círculo (de radio " + n + "cm) es " + area + "cm^2.</p>";
 	
 	document.getElementById("js_test_result").innerHTML = str;
 	
