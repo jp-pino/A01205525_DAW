@@ -9,7 +9,7 @@
 		<meta name="author" content="">
 		<link rel="icon" href="../../favicon.ico">
 
-		<title>Cuestionario: Bases de Datos</title>
+		<title>LAB 4: JS</title>
 
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -37,24 +37,27 @@
 			</header>
 
 			<!-- Static navbar -->
-			<nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light rounded shadow">
 				<a class="navbar-brand" href="#"><img src="images/logo.png" width="30" height="30" class="d-inline-block " alt=""> </a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
-						<li class="nav-item active">
+						<li class="nav-item">
 							<a class="nav-link" href="index.html">Home</a>
 						</li>
-						<li class="nav-item dropdown">
+						<li class="nav-item dropdown active">
 							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								Labs
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 								<a class="dropdown-item" href="lab1.html">Lab 1</a>
 								<a class="dropdown-item" href="#">Lab 2</a>
-								<a class="dropdown-item" href="#">Lab 3 <span class="sr-only">(current)</span></a>
+								<a class="dropdown-item" href="lab3.html">Lab 3</a>
+								<a class="dropdown-item" href="lab4.html">Lab 4</a>
+								<div class="dropdown-divider"></div>
+          						<a class="dropdown-item active" href="q_1.html">Cuestionario 1</a>
 							</div>
 						</li>
 						<li class="nav-item">
@@ -70,66 +73,77 @@
 		
 		<section id="content" class="container">
 			<header>
-				<h2 class="sr-only">Laboratorio 1</h2>
+				<h2 class="sr-only">Cuestionario 1</h2>
 			</header>
 			<div class="row">
 				<div class="col-lg-9">
 					
 					<!-- Main component for a primary marketing message or call to action -->
-					<article id="intro" class="jumbotron">
+					<article id="intro" class="jumbotron bg-dark text-white shadow">
 						<div class="row">
 							<div class="col-lg-9">
 								<header>
-									<h2>Lab 3: CSS</h2>
+									<h2>Cuestionario 1: BD vs DBMS</h2>
 								</header>
-								<p class="py-5">En este lab debemos agregar estilos <strong>CSS</strong> al laboratorio anterior y contestar nuevas preguntas.</p>
+								<p class="py-5">En esta sección se responderán las preguntas del cuestionario de bases de datos.</p>
 							</div>
 							<div class="col-sm">
 								<div class="container-fluid">
-								<img src="images/css-3.svg" class="img-fluid img" alt="Responsive Image of CSS-3"></div>
+								<img src="images/db.png" class="img-fluid img" alt="Responsive Image of JS"></div>
 							</div>
 						</div>
-
 					</article>
-
-
-
-					<article id="questions_lab3" class="py-4">
+					
+					
+					<article id="questions" class="py-4">
 						<header>
 							<h2>Preguntas</h2>
 							<h5 class="px-3">...y respuestas</h5>
 						</header>
+						
+						<div class="card mt-4 shadow">
+							<div class="card-body">
+								<h4 class="card-title">¿Qué es entonces una base de datos - DB?</h4>
+								<p class="card-text">Una base de datos es una colección de información relacionada<sub>[5]</sub> organizada para proporcionar una acceso efeciente a la misma<sub>[1]</sub>. De esta manera una base de datos no es más que la información almacenada de manera organizada que se trata como unidad para acceder a información relacionada<sub>[2]</sub>. Al utilizar una base de datos electrónica, los usuarios buscan automatizar el acceso a la información.</p>
+							</div>
+						</div>
+						<div class="card mt-4 shadow">
+							<div class="card-body">
+								<h4 class="card-title">¿En qué casos es conveniente usar bases de datos?<sub>[3]</sub></h4>
+								<ul class="card-text fa-ul">
+									<li><i class="fa-li fas fa-angle-right"></i> Cuando la información almacenada es muy grande.</li>
+									<li><i class="fa-li fas fa-angle-right"></i> Más de una persona accesará la información simultaneamente.</li>
+									<li><i class="fa-li fas fa-angle-right"></i> Cuando la información va a ser utilizada en otras aplicaciones.</li>
+									<li><i class="fa-li fas fa-angle-right"></i> Cuando la seguridad de la información es importante.</li>
+									<li><i class="fa-li fas fa-angle-right"></i> Cuando se quieren definir permisos de acceso a la información.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="card mt-4 shadow">
+							<div class="card-body">
+								<h4 class="card-title">¿Qué es un sistema de gestión de base de datos - DBMS?</h4>
+								<p class="card-text">Un sistema de gestión de base de datos (por sus siglas en inglés <strong>D</strong>ata<strong>B</strong>ase <strong>M</strong>anagement <strong>S</strong>ystem) es un sistema computarizado de manjejo de datos que les da a los usuarios la facilidad de manipular la información en la base de datos o su estructura<sub>[4]</sub>.</p>
+							</div>
+						</div>
+						<div class="card text-white bg-dark shadow mt-4">
+							<ul class="list-group list-group-flush bg-dark">
+								<li class="list-group-item text-dark"><h4>Enlista y explica las funciones/responsabilidades que tienen los DBMS.</h4><p class="card-text">Los DBMS resuelven las siguientes problemáticas<sub>6</sub>.</p></li>
+								<li class="list-group-item bg-dark"><h5>Redundancia e inconsistencia</h5><p class="card-text">El DBMS se asegura de que la información almacenada no esté duplicada y que todos los usuarios puedan acceder a la información mas actualizada.</p></li>
+								<li class="list-group-item bg-dark"><h5>Dificultad en el acceso</h5><p class="card-text">Debido a las relaciones implementadas en el sistema es muy facil para el usuario acceder a información específica organizada de la manera que le sea mas conveniente.</p></li>
+								<li class="list-group-item bg-dark"><h5>Aislamiento</h5><p class="card-text">Al implementarse bases de datos relacionales, los archivos registrados en el sistema pueden ser accesados por el mismo usuario de manera simultánea sin preocuparse de buscar los archivos.</p></li>
+								<li class="list-group-item bg-dark"><h5>Problemas de integridad</h5><p class="card-text">Al implementar restricciones de consistencia, se asegura que la información almacenada y por ser registrada siga la estructura de las tablas definidas en el sistema.</p></li>
+								<li class="list-group-item bg-dark"><h5>Problemas de atomicidad</h5><p class="card-text">El DBMS se asegura de que la información se restaure después de un fallo de sistema, para asegurar su seguridad y consistencia.</p></li>
+								<li class="list-group-item bg-dark"><h5>Problemas de seguridad</h5><p class="card-text">El DBMS permite la creación de usuarios y roles para restringir el acceso a la información o su modificación.</p></li>
+								<li class="list-group-item bg-dark"><h5>Problemas de acceso concurrente</h5><p class="card-text">El DBMS maneja las modificaciones concurrentes supervisando los cambios realizados. De esta manera intenta asegurar al usuario que la información que recibe está acutalizada.</p></li>
+							</ul>
+						</div>
+						<div class="card mt-4 shadow">
+							<div class="card-body">
+								<h4 class="card-title">Ejemplifica y justifica en que proyecto de los que has realizado hubiera sido conveniente utilizar una base de datos.</h4>
+								<p class="card-text">Para el "Laboratorio de Microcontroladores" hice un control de acceso basado en un módulo lector de huellas dactilares. Las entradas y salidas eran registradas en un archivo de texto. Hubiera sido conveniente tener una base de datos de usuarios registrados para estos manejar un mayor número de usuarios.</p>
+							</div>
+						</div>
 
-						<!-- QUESTIONS TO ANSWER -->
-						<div class="card-group py-4 ">
-							<div class="card bg-dark">
-								<div class="card-body">
-									<h5 class="card-title">Como ingeniero de software ¿cuál es tu recomendación sobre el uso de <code>!important</code> en un CSS? </h5>
-									<p class="card-text">Al usar este modificador se ignoran todas las modificaciones subsecuentes. No es recomendable usar <code>!important</code>, en vez de esto se debería usar una buena jerarquía de especificidad de estilos CSS. En casos de conflictos se puede utilizar para que modificaciones generales no afecten otras específicas.</p>
-								</div>
-							</div>
-							<div class="card bg-dark">
-								<div class="card-body">
-									<h5 class="card-title">Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado? </h5>
-									<p class="card-text">Porque esta se repetirá en el fondo tanto horizontalmente, como verticalmente. Hay que tener cuidado que se pueda visualizar de la manera esperada.</p>
-								</div>
-							</div>
-						</div>
-						<div class="card-group">
-							<div class="card bg-dark">
-								<div class="card-body">
-									<h5 class="card-title">Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de una propiedad de estilo entre %, px y pt?</h5>
-									<p class="card-text">Es completamente dependiente de la aplicación en cuestión. <code>%</code> se usa para definir el tamaño de un elemento en función de otro (texto en funcion del tamaño de texto del <code>&lt;body&gt;</code> o secciones en relación al tamaño del <strong>viewport</strong>).</p>
-									<p><code>px</code> y <code>pt</code> se utilizan para definir objetos de tamaño fijo, el primero según el tamaño de un pixel en la pantalla en la que se muestre el contenido y el segundo según el tamaño de texto impreso</p>
-								</div>
-							</div>
-							<div class="card bg-dark">
-								<div class="card-body">
-									<h5 class="card-title">¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</h5>
-									<p class="card-text">Porque al borrar todos los espacios y saltos de linea se reduce el tamaño del archivo, y consumir menos memoria es más rápido de cargar el contenido.</p>
-								</div>
-							</div>
-						</div>
 					</article>
 					
 					<article id="sources" class="py-4">
@@ -137,8 +151,12 @@
 							<h2>Bibliografía</h2>
 						</header>
 						<ul class="list-unstyled">
-							<li>[1] https://css-tricks.com/when-using-important-is-the-right-choice/</li>
-							<li>[2] https://www.w3schools.com/css/default.asp</li>
+							<li>[1] http://www.usg.edu/galileo/skills/unit04/primer04_01.phtml</li>
+							<li>[2] https://docs.oracle.com/cloud/latest/db112/CNCPT/intro.htm#CNCPT001</li>
+							<li>[3] http://www.bbc.co.uk/schools/gcsebitesize/ict/databases/2databasesrev4.shtml</li>
+							<li>[4] https://www.ibm.com/support/knowledgecenter/zosbasics/com.ibm.zos.zmiddbmg/zmiddle_46.htm</li>
+							<li>[5] Nirupma Pathak. Database Management System, 1-4</li>
+							<li>[6] Korth Henry, Silverschatz. Fundamentos de bases de datos, Capítulo 1.</li>
 						</ul>
 					</article>
 
@@ -149,7 +167,7 @@
 						<nav id="data-scrollspy">
 							<div id="list-example" class="list-group d-none d-lg-block">
 								<a class="list-group-item list-group-item-action" href="#intro"><i class="fas fa-angle-right"></i> Introducción</a>
-								<a class="list-group-item list-group-item-action" href="#questions_lab3"><i class="fas fa-angle-right"></i> Preguntas</a>
+								<a class="list-group-item list-group-item-action" href="#questions"><i class="fas fa-angle-right"></i> Preguntas</a>
 								<a class="list-group-item list-group-item-action" href="#sources"><i class="fas fa-angle-right"></i> Bibliografía</a>
 							</div>
 							<div class="wrapper text-center">
@@ -248,7 +266,7 @@
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/smooth-scroll.js"></script>
 	</body>
 	
