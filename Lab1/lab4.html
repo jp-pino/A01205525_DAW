@@ -135,12 +135,12 @@
 						<div class="card mt-4 shadow">
 							<div class="card-body">
 								<h4 class="card-title">¿Qué diferencias y semejanzas hay entre Java y JavaScript?</h4>
-								<p class="card-text">Ambos lenguajes comparten algunas semejanzas: son orientados a objetos, pueden correr en servidores, en navegadores web, y pueden usar frameworks y librerias<sub>[1][2]</sub>. Sin embargo, son más las diferencias que hay entre ellos. Partiendo de que <strong>Java</strong> es un lenguaje de programación orientado a objetos y que <strong>JS</strong> es un lenguaje de scripting orientado a objetos podemos derivar otras diferencias. Mientras que Java se compila y corre dentro de un JVM o navegador, JS es interpretado y solo puede funcionar dentro de un navegador. También cabe destacar que JavaScript está diseñado para dar interactividad a documentos HTML mientras que las aplicaciones Java cubren necesidades mucho mas amplias.</p>
+								<p class="card-text">Ambos lenguajes comparten algunas semejanzas: son orientados a objetos, pueden correr en servidores, en navegadores web, y pueden usar frameworks y librerias<sub>[2][3]</sub>. Sin embargo, son más las diferencias que hay entre ellos. Partiendo de que <strong>Java</strong> es un lenguaje de programación orientado a objetos y que <strong>JS</strong> es un lenguaje de scripting orientado a objetos podemos derivar otras diferencias. Mientras que Java se compila y corre dentro de un JVM o navegador, JS es interpretado y solo puede funcionar dentro de un navegador. También cabe destacar que JavaScript está diseñado para dar interactividad a documentos HTML mientras que las aplicaciones Java cubren necesidades mucho mas amplias.</p>
 							</div>
 						</div>
 						<div class="card text-white bg-dark shadow mt-4">
 							<ul class="list-group list-group-flush bg-dark">
-								<li class="list-group-item text-dark"><h4>¿Qué métodos tiene el objeto <code>Date</code>?</h4><p class="card-text">Descripción de métodos de JavaScript para el objeto Date.</p></li>
+								<li class="list-group-item text-dark"><h4>¿Qué métodos tiene el objeto <code>Date</code>?</h4><p class="card-text">Descripción de métodos de JavaScript para el objeto Date<sub>[1]</sub>.</p></li>
 								<li class="list-group-item bg-dark"><h5><code>getDate()</code></h5><p class="card-text">Regresa el día del mes (en números).</p></li>
 								<li class="list-group-item bg-dark"><h5><code>getDay()</code></h5><p class="card-text">Regresa el día de la semana (en números).</p></li>
 								<li class="list-group-item bg-dark"><h5><code>getFullYear()</code></h5><p class="card-text">Regresa el año en 4 dígitos.</p></li>
@@ -150,30 +150,35 @@
 						</div>
 						<div class="card text-white bg-dark shadow mt-4">
 							<ul class="list-group list-group-flush bg-dark">
-								<li class="list-group-item text-dark"><h4>¿Qué métodos tienen los arreglos?</h4><p class="card-text">Descripción de métodos de JavaScript para los arreglos.</p></li>
-								<li class="list-group-item bg-dark"><h5><code>toString()</code></h5><p class="card-text">Regresa el día del mes (en números).</p></li>
-								<li class="list-group-item bg-dark"><h5><code>pop()</code></h5><p class="card-text">Regresa el día de la semana (en números).</p></li>
-								<li class="list-group-item bg-dark"><h5><code>push()</code></h5><p class="card-text">Regresa el año en 4 dígitos.</p></li>
-								<li class="list-group-item bg-dark"><h5><code>shift()</code></h5><p class="card-text">Regresa la hora (0 - 23).</p></li>
-								<li class="list-group-item bg-dark"><h5><code>unshift()</code></h5><p class="card-text">Regresa los milisegundos (0 - 999).</p></li>
+								<li class="list-group-item text-dark"><h4>¿Qué métodos tienen los arreglos?</h4><p class="card-text">Descripción de métodos de JavaScript para los arreglos<sub>[4]</sub>.</p></li>
+								<li class="list-group-item bg-dark"><h5><code>toString()</code></h5><p class="card-text">Regresa el un string que contiene los elementos del arreglo separados por comas.</p></li>
+								<li class="list-group-item bg-dark"><h5><code>pop()</code></h5><p class="card-text">Elimina el último elemento del arreglo.</p></li>
+								<li class="list-group-item bg-dark"><h5><code>push()</code></h5><p class="card-text">Agrega un nuevo elemento al final.</p></li>
+								<li class="list-group-item bg-dark"><h5><code>shift()</code></h5><p class="card-text">Elimina el primer elemento del arreglo y mueve los demás una posición hacia arriba.</p></li>
+								<li class="list-group-item bg-dark"><h5><code>unshift()</code></h5><p class="card-text">Agrega un nuevo elemento al principio y recorre los demás.</p></li>
 							</ul>
 						</div>
 						<div class="card mt-4 shadow">
 							<div class="card-body">
 								<h4 class="card-title">¿Cómo se declara una variable con alcance local dentro de una función?</h4>
-								<p class="card-text">Además de estar disponibles los métodos definidos por el DOM de HTML y XML, hay métodos de JavaScript con diferentes funciones de edición del texto/formato del documento, funciones matemáticas, de fecha y hora del sistema, ejecutar funciones del usuario, etc.</p>
+								<p class="card-text">Para que una variable sea local tiene que declararse dentro del cuerpo de la función de la siguiente manera<sub>[5]</sub>:</p>
+								<blockquote class="blockquote mb-0">
+									<p><code>function myFunction() {</code></p>
+									<p class="ml-4"><code>var myVar = ...;</code></p>
+									<p><code>}</code></p>
+								</blockquote>
 							</div>
 						</div>
 						<div class="card mt-4 shadow">
 							<div class="card-body">
 								<h4 class="card-title">¿Qué implicaciones tiene utilizar variables globales dentro de funciones?</h4>
-								<p class="card-text">En PHP hay un gran número de métodos pensados para la creación de sitios dinámicos. Estos incluyen funciones matemáticas, de fecha/hora, de acceso a bases de datos, de manejo de arreglos, de seguridad, de estilo, etc.</p>
+								<p class="card-text">El valor de la variable alterada se conservará para otras funciones y ejecuciones de código. Hay que tener cuidado de que esto sea realmente lo que se quiere hacer<sub>[5]</sub>.</p>
 							</div>
 						</div>
 						<div class="card mt-4 shadow">
 							<div class="card-body">
 								<h4 class="card-title">¿Qué método de String se puede utilizar para buscar patrones con expresiones regulares?¿Para qué podrías utilizar esto en una aplicación web?</h4>
-								<p class="card-text">JSP o <strong>J</strong>ava<strong>S</strong>erver <strong>P</strong>ages es una tecnología para desarrollar páginas dinámicas con el lenguaje Java. De esta manera es similar a PHP, pero JSP tiene acceso a los métodos disponibles en Java.</p>
+								<p class="card-text">El método <code>search()</code>. Este es usado para buscar expresiones regulares en un string. Este método podría ser útil en aplicaciones que involucren buscadores<sub>[6]</sub>.</p>
 							</div>
 						</div>
 
@@ -184,8 +189,12 @@
 							<h2>Bibliografía</h2>
 						</header>
 						<ul class="list-unstyled">
-							<li>[1] https://css-tricks.com/when-using-important-is-the-right-choice/</li>
-							<li>[2] https://www.w3schools.com/css/default.asp</li>
+							<li>[1] https://www.w3schools.com/jsref/jsref_obj_date.asp</li>
+							<li>[2] https://www.java.com/en/download/faq/java_javascript.xml</li>
+							<li>[3] https://www.electronicproducts.com/Programming/Software/Java_vs_JavaScript_differences_and_similarities.aspx?id=206</li>
+							<li>[4] https://www.w3schools.com/js/js_array_methods.asp</li>
+							<li>[5] https://www.w3schools.com/js/js_scope.asp</li>
+							<li>[6] https://www.w3schools.com/js/js_regexp.asp</li>
 						</ul>
 					</article>
 
