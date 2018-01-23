@@ -90,26 +90,35 @@ function test_3_out() {
 
 //Prueba 4
 function test_4() {
-	var str = "<h3 class='mb-3'>Prueba 4</h3><p>Ingresa los valores del arreglo separados por comas:</p>"
+	var str = "<h3 class='mb-3'>Prueba 4</h3><p>Ingresa los valores del arreglo separados por comas. Ingresa los arreglos separados por punto y coma ';':</p>"
 	str += '<div class="input-group mb-3"><input id="test_textfield" type="text" class="form-control" placeholder="0,-1,2,5,0"><div class="input-group-append"><button class="btn btn-primary" type="button" onclick="test_4_out()">Promediar</button></div></div><div id="js_test_result"></div>';
 	document.getElementById("js_test").innerHTML = str;
 }
 
 function array_mean(s_array) {
 	var n = 0;
+	var out = [];
 	
 	for (i=0; i<s_array.length; i++) {
-		n += parseInt(s_array[i]);
+		n = 0;
+		for (j=0; j<s_array[i].length; j++) {
+			n += parseInt(s_array[i][j])/s_array[i].length;
+		}
+		out.push(n);
 	}
 	
-	return n/s_array.length;
+	return out;
 }
 
 function test_4_out() {
-	var s_array = document.getElementById('test_textfield').value.split(',');
-	var n = array_mean(s_array);
+	var s_matrix = document.getElementById('test_textfield').value.split(';');
+	for (i=0; i<s_matrix.length; i++)
+		s_matrix[i] = s_matrix[i].split(',');
+	var n = array_mean(s_matrix);
 	
-	var str = "<p>El promedio de los números es " + n + "</p>";
+	var str = "";
+	for (i=0; i<n.length; i++)
+		str += "<p>El promedio de los números es " + n[i] + "</p>";
 	
 	document.getElementById("js_test_result").innerHTML = str;
 	
