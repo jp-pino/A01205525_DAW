@@ -15,10 +15,12 @@
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
-		<link href="css/custom.min.css" rel="stylesheet">
+		<link href="css/custom.css" rel="stylesheet">
 		
 		<!-- Custom Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Saira+Condensed|Yanone+Kaffeesatz" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lora:400italic' rel='stylesheet' type='text/css'>
 		
 		<!-- Font Awesome -->
 		<link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
@@ -73,26 +75,67 @@
 		
 		<section id="content" class="container">
 			<header>
-				<h2 class="sr-only">Laboratorio 1</h2>
+				<h2 class="sr-only">Home</h2>
 			</header>
-			<!-- Main component for a primary marketing message or call to action -->
-			<article id="intro" class="jumbotron shadow">
-				<div class="row">
-					<div class="col-xl-9">
-						<header>
-							<h2>Lab 1: Introducción</h2>
-						</header>
-						<p class="py-5">Mi nombre es Juan Pablo Pino Bravo (A01205525). Soy un estudiante de <strong>Ingeniería en Sistemas Digitales y Robótica</strong> de quinto semestre. A pesar de que esta materia no es parte de mi plan, me llama mucho la atención para desarrollar proyectos que puedan involucar <strong>IoT</strong>. He hecho anteriormente algo de diseño web, principalmente páginas estáticas, aunque también he incursionado un poco en <i>PHP</i>, algo de bases de datos y <i>JavaScript</i>. Espero aprender mucho este semestre y estoy dispuesto a dar lo mejor de mí. </p>
-						<p>
-							<a class="btn btn-lg btn-primary" href="CV.pdf" role="button">Ver CV &raquo;</a>
-						</p>
-					</div>
-					<div class="col">
-						<div class="container-fluid">
-						<img src="images/iot_intro.png" class="img-fluid img" alt="Responsive Image of IOT"></div>
-					</div>
+			
+			
+			<article id="intro">
+				<header>
+					<h2 class="sr-only">DAW y BD</h2>
+				</header>
+				<div class="asog">
+					<h1 class="ml1 asog-r1">
+						<span class="text-wrapper">
+							<span class="line line1"></span>
+							<span class="letters">DAW y BD</span>
+							<span class="line line2"></span>
+						</span>
+					</h1>
+					<h1 class="asog-r2">Repositorio de Laboratorios</h1>
 				</div>
 			</article>
+			
+			<article id="recent" class="py-4 mt-4">
+				<header>
+					<h2>Artículos recientes</h2>
+					<h5>Laboratorios, Cuestionarios y Entregas</h5>
+				</header>
+				
+				<div class="row mt-4">
+					<div class="col">
+						<a href="lab1.html">
+							<div class="box">
+								<div class="px-3 py-3">
+									<h3>Laboratorio 1</h3>
+									<p>Mi nombre es Juan Pablo Pino Bravo (A01205525). Soy un estudiante de Ingeniería en Sistemas Digitales y Robótica de quinto semestre...</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="lab3.html">
+							<div class="box">
+								<div class="px-3 py-3">
+									<h3>Laboratorio 3</h3>
+									<p>En este lab debemos agregar estilos CSS al laboratorio anterior y contestar nuevas preguntas.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class="col">
+						<a href="lab4.html">
+							<div class="box">
+								<div class="px-3 py-3">
+									<h3>Laboratorio 4</h3>
+									<p>En este lab debemos realizar ejercicios de JS y contestar nuevas preguntas.</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+				
+			</article>
+			
 		</section>
 		
 		<section id="social" class="container">
@@ -198,6 +241,8 @@
 		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/smooth-scroll.js"></script>
+		<script src="js/anime.min.js"></script>
+		<script src="js/anime_test.js"></script>
 	</body>
 	
 </html>
