@@ -87,6 +87,8 @@ body, #sidenav, .social {
 	z-index: 5;
 }
 
+
+
 /*Tobias Ahlin*/
 .asog {
 	color: #fff;
@@ -138,6 +140,8 @@ body, #sidenav, .social {
 	transform: scaleX(-1);
 }
 
+
+/* Intro Text */
 .ml1 .letter {
   display: inline-block;
   line-height: 1em;
@@ -163,4 +167,9 @@ body, #sidenav, .social {
 
 .ml1 .line1 { top: 0; }
 .ml1 .line2 { bottom: 0; }
+
+.gj-calendar {
+	z-index: 1000;
+	position: relative;
+}
 

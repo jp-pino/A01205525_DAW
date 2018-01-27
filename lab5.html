@@ -28,6 +28,8 @@
 		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		
+		<link href="https://cdn.jsdelivr.net/gh/atatanasov/gijgo@1.7.3/dist/combined/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 	</head>
 
 	<body data-spy="scroll" data-target="#data-scrollspy">
@@ -131,14 +133,10 @@
 									</a>
 								</div>
 								<div class="col">
-									<a href="https://arrancar.ec">
-										<div class="box">
-											<div class="px-3 py-3">
-												<h3>Opción múltiple</h3>
-												<p>Buscador de servicios automotrices en Ecuador.</p>
-											</div>
-										</div>
-									</a>
+									<h3>Creativo</h3>
+									<p>Ingresa tu fecha de nacimiento (mm/dd/aaaa):</p>
+									<input id="datepicker">
+									<div class="small" id="age" class="container-fluid"></div>
 								</div>
 							</div>
 						</div>
@@ -154,19 +152,19 @@
 						<div class="card mt-4 shadow">
 							<div class="card-body">
 								<h4 class="card-title">¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</h4>
-								<p class="card-text">Ambos lenguajes comparten algunas semejanzas: son orientados a objetos, pueden correr en servidores, en navegadores web, y pueden usar frameworks y librerias<sub>[2][3]</sub>. Sin embargo, son más las diferencias que hay entre ellos. Partiendo de que <strong>Java</strong> es un lenguaje de programación orientado a objetos y que <strong>JS</strong> es un lenguaje de scripting orientado a objetos podemos derivar otras diferencias. Mientras que Java se compila y corre dentro de un JVM o navegador, JS es interpretado y solo puede funcionar dentro de un navegador. También cabe destacar que JavaScript está diseñado para dar interactividad a documentos HTML mientras que las aplicaciones Java cubren necesidades mucho mas amplias.</p>
+								<p class="card-text">Porque le ahorra tiempo al usuario. La página funcionaría igual, pero habria que esperar una respuesta negativa del servidor antes de darse cuenta del error en el formulario.</p>
 							</div>
 						</div>
 						<div class="card mt-4 shadow">
 							<div class="card-body">
 								<h4 class="card-title">¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</h4>
-								<p class="card-text">Ambos lenguajes comparten algunas semejanzas: son orientados a objetos, pueden correr en servidores, en navegadores web, y pueden usar frameworks y librerias<sub>[2][3]</sub>. Sin embargo, son más las diferencias que hay entre ellos. Partiendo de que <strong>Java</strong> es un lenguaje de programación orientado a objetos y que <strong>JS</strong> es un lenguaje de scripting orientado a objetos podemos derivar otras diferencias. Mientras que Java se compila y corre dentro de un JVM o navegador, JS es interpretado y solo puede funcionar dentro de un navegador. También cabe destacar que JavaScript está diseñado para dar interactividad a documentos HTML mientras que las aplicaciones Java cubren necesidades mucho mas amplias.</p>
+								<p class="card-text">Desactivando JavaScript en el servidor.</p>
 							</div>
 						</div>
 						<div class="card mt-4 shadow">
 							<div class="card-body">
 								<h4 class="card-title">Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</h4>
-								<p class="card-text">Ambos lenguajes comparten algunas semejanzas: son orientados a objetos, pueden correr en servidores, en navegadores web, y pueden usar frameworks y librerias<sub>[2][3]</sub>. Sin embargo, son más las diferencias que hay entre ellos. Partiendo de que <strong>Java</strong> es un lenguaje de programación orientado a objetos y que <strong>JS</strong> es un lenguaje de scripting orientado a objetos podemos derivar otras diferencias. Mientras que Java se compila y corre dentro de un JVM o navegador, JS es interpretado y solo puede funcionar dentro de un navegador. También cabe destacar que JavaScript está diseñado para dar interactividad a documentos HTML mientras que las aplicaciones Java cubren necesidades mucho mas amplias.</p>
+								<p class="card-text">Básicamente por ahorrarle tiempo al usuario. Sin embargo, el sistema debe validar de cualquier manera los datos ingresados al formulario ya en el lado del servidor por seguridad.</p>
 							</div>
 						</div>
 						
@@ -177,15 +175,13 @@
 						<header>
 							<h2>Bibliografía</h2>
 						</header>
-						<ul class="list-unstyled">
-							<li>[1] https://www.w3schools.com/jsref/jsref_obj_date.asp</li>
-							<li>[2] https://www.java.com/en/download/faq/java_javascript.xml</li>
-							<li>[3] https://www.electronicproducts.com/Programming/Software/Java_vs_JavaScript_differences_and_similarities.aspx?id=206</li>
-							<li>[4] https://www.w3schools.com/js/js_array_methods.asp</li>
-							<li>[5] https://www.w3schools.com/js/js_scope.asp</li>
-							<li>[6] https://www.w3schools.com/js/js_regexp.asp</li>
-						</ul>
+						<div class="container-fluid">
+							<ul class="list-unstyled">
+								<li>[1] https://www.w3schools.com/jsref/jsref_obj_date.asp</li>
+							</ul>
+						</div>
 					</article>
+					
 
 
 				</div>
@@ -440,6 +436,7 @@
 		<script src="js/js_test.js"></script>
 		<script src="js/anime.min.js"></script>
 		<script src="js/anime_test.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/atatanasov/gijgo@1.7.3/dist/combined/js/gijgo.min.js" type="text/javascript"></script>
 		<script src="js/validator.js"></script>
 	</body>
 	

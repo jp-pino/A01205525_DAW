@@ -29,3 +29,23 @@ function quantity() {
 	document.getElementById("impuestos").innerHTML = "$" + (t1+t2+t3)*0.16 + ".00 MXN";
 	document.getElementById("total").innerHTML = "$" + (t1+t2+t3)*1.16 + ".00 MXN";
 }
+
+
+$('#datepicker').datepicker({
+	uiLibrary: 'bootstrap4'
+});
+
+function date() {
+	let str = document.getElementById("datepicker").value.split("/");
+	let date_p = new Date(parseInt(str[2]),parseInt(str[0])-1,parseInt(str[1]));
+	console.log(date_p);
+	
+	var diff = Math.floor(Date.now() - date_p.getTime());
+    var day = 1000 * 60 * 60 * 24;
+	
+	var days = Math.floor(diff/day);
+	
+	document.getElementById("age").innerHTML = "<p>Tienes " + Math.floor(days/365)  + " años y " + Math.floor((days%365)/31) + " meses.";
+}
+
+document.getElementById("datepicker").onchange = date;
